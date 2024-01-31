@@ -30,6 +30,7 @@ while is_on:
     if player.at_finish_line():
         player.up()
         car_manager.level_up()
+        score.increase_level()
         score.update_score()
 
 
