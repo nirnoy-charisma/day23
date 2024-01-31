@@ -23,7 +23,7 @@ while is_on:
     car_manager.move()
 
     for car in car_manager.all_car:
-        if car_manager.distance(player) <20:
+        if car.distance(player) <20:
             is_on=False
             score.game_over()
 
